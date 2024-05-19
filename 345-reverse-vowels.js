@@ -11,7 +11,6 @@ var reverseVowels = function(s) {
     for(let i = 0; i < s.length; i++) {
         if(vowels.includes(s[i].toLowerCase())) ixArr.push(i);
     }
-    console.log(ixArr);
     for(let x = 0; x < Math.ceil(ixArr.length / 2); x++) {
         const leftIx = ixArr[x];
         const rightIx = ixArr[ixArr.length - 1 - x];
